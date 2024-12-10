@@ -1,6 +1,4 @@
 import React from "react";
-import posterWomen from "@/app/image/women.jpg";
-import posterMen from "@/app/image/men.jpg";
 import newArrival1 from "@/app/image/pic1.jpg";
 import newArrival2 from "@/app/image/pic2.jpg";
 import newArrival3 from "@/app/image/pic3.jpg";
