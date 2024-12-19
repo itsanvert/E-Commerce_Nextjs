@@ -1,16 +1,15 @@
 import React from "react";
-import newArrival1 from "@/app/image/pic1.jpg";
-import newArrival2 from "@/app/image/pic2.jpg";
-import newArrival3 from "@/app/image/pic3.jpg";
-import newArrival4 from "@/app/image/pic4.jpg";
-import newArrival5 from "@/app/image/pic5.jpg";
-import bestSelling1 from "@/app/image/pic6.jpg";
-import bestSelling2 from "@/app/image/pic7.jpg";
-import bestSelling3 from "@/app/image/pic8.jpg";
-import bestSelling4 from "@/app/image/pic9.jpg";
-import bestSelling5 from "@/app/image/pic10.jpg";
-import bestSelling6 from "@/app/image/pic11.jpg";
-import bestSelling7 from "@/app/image/pic12.jpg";
+import newArrival1 from "@/app/image/01.jpg";
+import newArrival2 from "@/app/image/02.jpg";
+import newArrival3 from "@/app/image/03.jpg";
+import newArrival4 from "@/app/image/04.jpg";
+import newArrival5 from "@/app/image/05.jpg";
+import bestSelling1 from "@/app/image/06.jpg";
+import bestSelling3 from "@/app/image/07.jpg";
+import bestSelling4 from "@/app/image/08.jpg";
+import bestSelling5 from "@/app/image/09.jpg";
+import bestSelling6 from "@/app/image/10.jpg";
+import bestSelling7 from "@/app/image/11.jpg";
 
 const page = () => {
   return (
@@ -131,12 +130,12 @@ const page = () => {
 
       {/* New Arrival Section */}
       <div>
-        <button className="font-bold text-black text-xl p-3 cursor-pointer btn btn-ghost block  ">
+        <button className="font-bold text-black text-xl p-3 cursor-pointer btn btn-ghost    ">
           New Arrival
         </button>
-        <div className="carousel rounded-box relative ">
+        <div className="carousel rounded-box relative   ">
           {/* card */}
-          <div className=" bg-pink-200  carousel-item  relative   ">
+          <div className=" bg-pink-200  carousel-item  relative m-1   ">
             <img src={newArrival1.src} alt="clothe" />
 
             <div className="  w-full  absolute  bottom-5 ">
@@ -147,63 +146,418 @@ const page = () => {
                 $59.00
               </p>
               <div className="flex justify-center md:justify-end pl-20 md:pr-10">
-                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-blue-600">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
                   Buy Now
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="carousel-item m-1">
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={newArrival2.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Winter hoodie
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $109.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
-            <img src={newArrival3.src} alt="clothe" />
-          </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={newArrival4.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Black shopping bag
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $49.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={newArrival5.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                White hoodie Eighty five
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $299.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
-            <img src={newArrival1.src} alt="clothe" />
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
+            <img src={bestSelling7.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
-            <img src={newArrival2.src} alt="clothe" />
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
+            <img src={bestSelling6.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Baggy jean
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $1000.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
+            <img src={bestSelling5.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Futuristic Sun glasses
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $199.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/*best selling*/}
+      {/* New Arrival Section */}
       <div>
-        <button className="font-bold text-black text-xl p-3 cursor-pointer btn btn-ghost">
-          Best selling
+        <button className="font-bold text-black text-xl p-3 cursor-pointer btn btn-ghost    ">
+          Best Seller
         </button>
-        <div className="carousel rounded-box">
-          <div className="carousel-item m-1">
+        <div className="carousel rounded-box relative   ">
+          {/* card */}
+          <div className=" bg-pink-200  carousel-item  relative m-1   ">
             <img src={bestSelling1.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
-            <img src={bestSelling2.src} alt="clothe" />
-          </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={bestSelling3.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={bestSelling4.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={bestSelling5.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={bestSelling6.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="carousel-item m-1">
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
             <img src={bestSelling7.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative m-1  ">
+            <img src={newArrival1.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* New Arrival Section */}
+      <div>
+        <button className="font-bold text-black text-xl p-3 cursor-pointer btn btn-ghost    ">
+          Accessory
+        </button>
+        <div className="carousel rounded-box relative   ">
+          {/* card */}
+          <div className=" bg-pink-200  carousel-item  relative    ">
+            <img src={newArrival1.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative   ">
+            <img src={newArrival2.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative   ">
+            <img src={newArrival4.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative   ">
+            <img src={newArrival5.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative  ">
+            <img src={bestSelling7.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative   ">
+            <img src={bestSelling6.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-pink-200  carousel-item  relative   ">
+            <img src={bestSelling5.src} alt="clothe" />
+
+            <div className="  w-full  absolute  bottom-5 ">
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2  sm:right-72">
+                Classic Oversize white Tee
+              </p>
+              <p className=" block text-white text-sm sm:text-base lg:text-lg font-thin m-2 sm:right-72">
+                $59.00
+              </p>
+              <div className="flex justify-center md:justify-end pl-20 md:pr-10">
+                <button className="  px-2  py-1 md:px-4  md:py-2  bg-transparent rounded-lg text-white  left-3 text-sm sm:text-base lg:text-lg font-thin hover:bg-black transform hover:scale-105 transition duration-300">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+      <footer className="footer bg-neutral text-neutral-content p-10">
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Branding</a>
+          <a className="link link-hover">Design</a>
+          <a className="link link-hover">Marketing</a>
+          <a className="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+          <a className="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+      </div> 
+
     </div>
   );
 };
