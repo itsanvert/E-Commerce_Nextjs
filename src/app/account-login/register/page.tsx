@@ -120,12 +120,23 @@ const page = () => {
 
         <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
           <input
-            type="Tel"
+            type="email"
             className="w-full h-full px-4 pt-3 outline-none bg-transparent text-white peer"
             autoComplete="off"
           />
           <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
-            Phone number
+            Email
+          </label>
+        </div>
+
+        <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
+          <input
+            type="password"
+            className="w-full h-full px-4 pt-3 outline-none bg-transparent text-white peer"
+            autoComplete="off"
+          />
+          <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
+            password
           </label>
         </div>
 
