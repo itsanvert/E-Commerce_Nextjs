@@ -3,7 +3,7 @@ import React from 'react'
 const notFound = () => {
   return (
     <div>
-      <h1>no page here</h1>
+      <h1>THis page is not availble</h1>
     </div>
   )
 }

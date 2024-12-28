@@ -240,43 +240,44 @@ const page = () => {
         </div>
       </div>
       <div>
-        <div className="p-2 mx-2">
+        <div className='pb-2 '>
           <button className="btn btn-outline mx-3">Women</button>
           <button className="btn btn-outline mx-3">Men</button>
         </div>
         <div>
-          <button className="btn btn-outline mx-3">Top</button>
-          <button className="btn btn-outline mx-3">Bottom</button>
-          <button className="btn btn-outline mx-3">Accessory</button>
+        <button className="btn btn-outline mx-3">Shoe</button>
+        <button className="btn btn-outline mx-3">neckless</button>
+        <button className="btn btn-outline mx-3">Sun Glass</button>
+        <button className="btn btn-outline mx-3">Head</button>
         </div>
-        <h1 className="m-2 font-bold">New Arrival</h1>
+        <h1 className='m-2 font-bold'>Accessory</h1>
       </div>
 
       {/* display new arrival  item */}
       <UniformGrid />
-
+      
       <div>
-        <footer className="footer bg-neutral text-neutral-content p-20">
-          <nav>
-            <h6 className="footer-title">Contact us</h6>
-            <a className="link link-hover">Facebook</a>
-            <a className="link link-hover">Instagram</a>
-            <a className="link link-hover">TikTok</a>
-            <a className="link link-hover">Email</a>
-          </nav>
-          <nav>
-            <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Term and Condition</a>
-          </nav>
-          <nav>
-            <h6 className="footer-title">We Accept</h6>
-            <a className="link link-hover">ABA bank</a>
-            <a className="link link-hover">Acelida</a>
-            <a className="link link-hover">KH QR</a>
-          </nav>
-        </footer>
-      </div>
+      <footer className="footer bg-neutral text-neutral-content p-20">
+        <nav>
+          <h6 className="footer-title">Contact us</h6>
+          <a className="link link-hover">Facebook</a>
+          <a className="link link-hover">Instagram</a>
+          <a className="link link-hover">TikTok</a>
+          <a className="link link-hover">Email</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Term and Condition</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">We Accept</h6>
+          <a className="link link-hover">ABA bank</a>
+          <a className="link link-hover">Acelida</a>
+          <a className="link link-hover">KH QR</a>
+        </nav>
+      </footer>
+      </div> 
     </div>
   );
 };

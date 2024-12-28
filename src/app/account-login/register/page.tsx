@@ -1,17 +1,62 @@
-import React from "react";
+"use client";
 
-const page = () => {
+import React, { useState } from "react";
+import { auth } from "@/app/services/firebase"; // Ensure your Firebase setup file is correctly imported
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { useRouter } from "next/navigation"; // For navigation after successful registration/login
+import { FirebaseError } from "firebase/app"; // Import FirebaseError
+
+const Page = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const router = useRouter();
+
+  const handleRegister = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault(); // Prevent default form submission
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      alert("User registered successfully!");
+      router.push("/"); // Navigate to the homepage on success
+    } catch (error) {
+      if (error instanceof FirebaseError) {
+        console.error("Firebase Error during registration:", error.message);
+        alert(error.message);
+      } else {
+        console.error("Unexpected error during registration:", error);
+        alert("An unexpected error occurred.");
+      }
+    }
+  };
+
+  const handleLogin = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault(); // Prevent default form submission
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      alert("Logged in successfully!");
+      router.push("/"); // Navigate to the homepage on success
+    } catch (error) {
+      if (error instanceof FirebaseError) {
+        console.error("Firebase Error during login:", error.message);
+        alert(error.message);
+      } else {
+        console.error("Unexpected error during login:", error);
+        alert("An unexpected error occurred.");
+      }
+    }
+  };
+
   return (
     <div>
       {/* Navbar Section */}
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -90,77 +135,90 @@ const page = () => {
           </button>
         </div>
       </div>
-      
+
       <div className="h-screen flex flex-col items-center justify-start">
         <h1 className="text-4xl font-bold text-center mt-16 mb-10">Register</h1>
 
-        <div className="flex space-x-5">
-          <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-48 text-sm relative focus-within:border-black mb-5">
+        <form onSubmit={handleRegister} className="w-full flex flex-col items-center">
+          <div className="flex space-x-5">
+            <div className="flex items-center justify-center border border-gray-400 rounded-md h-14 w-48 text-sm relative focus-within:border-black mb-5">
+              <input
+                type="text"
+                className="w-1/2 h-full px-4 pt-3 outline-none bg-transparent text-white peer"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+              <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
+                First name
+              </label>
+            </div>
+
+            <div className="flex items-center justify-center border border-gray-400 rounded-md h-14 w-48 text-sm relative focus-within:border-black mb-5">
+              <input
+                type="text"
+                className="w-1/2 h-full px-4 pt-3 outline-none bg-transparent text-white peer"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+              <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
+                Last name
+              </label>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
             <input
-              type="first-name"
-              className="w-1/2 h-full px-4 pt-3 outline-none bg-transparent text-white peer"
-              autoComplete="off"
+              type="email"
+              className="w-full h-full px-4 pt-3 outline-none bg-transparent text-black peer"
+              
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
-              First name
+              Email
             </label>
           </div>
 
-          <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-48 text-sm relative focus-within:border-black mb-5">
+          <div className="flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
             <input
-              type="last-name"
-              className="w-1/2 h-full px-4 pt-3 outline-none bg-transparent text-white peer"
-              autoComplete="off"
+              type="password"
+              className="w-full h-full px-4 pt-3 outline-none bg-transparent text-white peer"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
-              Last name
+              Password
             </label>
           </div>
-        </div>
 
-        <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
-          <input
-            type="email"
-            className="w-full h-full px-4 pt-3 outline-none bg-transparent text-white peer"
-            autoComplete="off"
-          />
-          <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
-            Email
-          </label>
-        </div>
-
-        <div className=" flex items-center justify-center border border-gray-400 rounded-md h-14 w-[404px] text-sm relative focus-within:border-black mb-5">
-          <input
-            type="password"
-            className="w-full h-full px-4 pt-3 outline-none bg-transparent text-white peer"
-            autoComplete="off"
-          />
-          <label className="text-gray-400 absolute left-4 top-4 transition-all duration-300 peer-focus:text-xs peer-focus:top-2">
-            password
-          </label>
-        </div>
+          <div>
+            <button
+              type="submit"
+              className="flex items-center justify-center border-none bg-black text-white rounded-md h-14 w-[404px] text-sm mb-3 mt-5 transform hover:scale-105 transition duration-300"
+            >
+              Register Now
+            </button>
+          </div>
+        </form>
 
         <div>
-          <button className="flex items-center justify-center border-none bg-black text-white rounded-md h-14 w-[404px] text-sm mb-3 mt-5  transform hover:scale-105 transition duration-300">
-            Rigister Now
-          </button>
-        </div>
-
-        <div>
-          <a className="text-center cursor-pointer hover:underline ">
+          <a className="text-center cursor-pointer hover:underline">
             Already have an account?
           </a>
         </div>
 
-        <div>
-          <button className="flex items-center justify-center border-none bg-black text-white rounded-md h-14 w-[404px] text-sm mt-8 transform hover:scale-105 transition duration-300">
-            login
-          </button>
-        </div>
+        <form onSubmit={handleLogin} className="w-full flex flex-col items-center">
+          <div>
+            <button
+              type="submit"
+              className="flex items-center justify-center border-none bg-black text-white rounded-md h-14 w-[404px] text-sm mt-8 transform hover:scale-105 transition duration-300"
+            >
+              Login
+            </button>
+          </div>
+        </form>
       </div>
-
     </div>
   );
 };
 
-export default page;
+export default Page;

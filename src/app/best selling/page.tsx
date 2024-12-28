@@ -249,34 +249,33 @@ const page = () => {
           <button className="btn btn-outline mx-3">Bottom</button>
           <button className="btn btn-outline mx-3">Accessory</button>
         </div>
-        <h1 className="m-2 font-bold">New Arrival</h1>
+        <h1 className="m-2 font-bold">Best selling</h1>
       </div>
 
       {/* display new arrival  item */}
       <UniformGrid />
-
       <div>
-        <footer className="footer bg-neutral text-neutral-content p-20">
-          <nav>
-            <h6 className="footer-title">Contact us</h6>
-            <a className="link link-hover">Facebook</a>
-            <a className="link link-hover">Instagram</a>
-            <a className="link link-hover">TikTok</a>
-            <a className="link link-hover">Email</a>
-          </nav>
-          <nav>
-            <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Term and Condition</a>
-          </nav>
-          <nav>
-            <h6 className="footer-title">We Accept</h6>
-            <a className="link link-hover">ABA bank</a>
-            <a className="link link-hover">Acelida</a>
-            <a className="link link-hover">KH QR</a>
-          </nav>
-        </footer>
-      </div>
+      <footer className="footer bg-neutral text-neutral-content p-20">
+        <nav>
+          <h6 className="footer-title">Contact us</h6>
+          <a className="link link-hover">Facebook</a>
+          <a className="link link-hover">Instagram</a>
+          <a className="link link-hover">TikTok</a>
+          <a className="link link-hover">Email</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Term and Condition</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">We Accept</h6>
+          <a className="link link-hover">ABA bank</a>
+          <a className="link link-hover">Acelida</a>
+          <a className="link link-hover">KH QR</a>
+        </nav>
+      </footer>
+      </div> 
     </div>
   );
 };
